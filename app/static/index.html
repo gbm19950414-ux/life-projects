@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>life-projects · 项目工作台</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand"><span class="brand-mark">◉</span> life-projects <span class="brand-sub">项目工作台</span></div>
+    <span class="local-tag">本机 · 单项目</span>
+  </header>
+  <main class="shell">
+    <section class="intro">
+      <div><p class="eyebrow">从一个真实项目开始</p><h1>看清下一步，记录实际进展。</h1><p class="intro-note">目标、任务、时间安排与执行记录在这里连起来。先收下一条想法，等决定执行时再补完成条件。</p></div>
+      <div class="status-box" aria-live="polite"><span id="save-status" class="status-dot"></span><span id="message">正在读取本机账本…</span><button id="reload" type="button" class="text-button">重新读取</button></div>
+    </section>
+    <div id="app" hidden>
+      <section class="overview-grid">
+        <article class="card purpose" id="project-card"></article>
+        <article class="card next" id="next-card"></article>
+      </section>
+      <section class="section-heading"><div><p class="eyebrow">任务流</p><h2>本项目的工作</h2></div><div id="task-count" class="muted"></div></section>
+      <div class="grid-two">
+        <article class="card capture-card"><h3>快速记下一件事</h3><p class="muted">先保存标题；它会作为候选，不会自动进入待办。</p><form id="capture-form"><label for="capture-title">想法或任务</label><div class="inline-field"><input id="capture-title" name="title" required maxlength="300" placeholder="例如：整理下一个开发步骤"><button type="submit" class="primary">记下</button></div></form></article>
+        <article class="card legend-card"><h3>状态如何使用</h3><p><strong>候选</strong> 留待判断；<strong>待做</strong> 表示已经选择；<strong>执行中</strong> 是正在推进；受阻、完成和取消都保留历史。</p><p class="muted">“可做”由待做状态和前置任务自动算出。</p></article>
+      </div>
+      <div id="warnings" aria-live="polite"></div>
+      <div id="task-list" class="task-list"></div>
+      <section class="section-heading"><div><p class="eyebrow">执行安排</p><h2>本周时间</h2></div><div class="week-control"><label for="week-date">查看日期</label><input id="week-date" type="date"><button id="this-week" type="button" class="secondary">本周</button></div></section>
+      <div class="grid-two schedule-grid"><article class="card"><h3>预留时间</h3><form id="block-form">
+        <input name="id" type="hidden"><label for="block-task">任务</label><select id="block-task" name="task_id" required></select>
+        <div class="field-pair"><div><label for="block-start">计划开始</label><input id="block-start" name="planned_start" type="datetime-local" required></div><div><label for="block-end">计划结束</label><input id="block-end" name="planned_end" type="datetime-local" required></div></div>
+        <div class="actions"><button type="submit" class="primary">保存安排</button><button id="block-cancel-edit" type="button" class="text-button" hidden>取消编辑</button></div>
+      </form></article><article class="card"><h3>记录实际</h3><form id="log-form">
+        <label for="log-task">任务</label><select id="log-task" name="task_id" required></select>
+        <label for="log-block">对应安排（可不选）</label><select id="log-block" name="block_id"></select>
+        <div class="field-pair"><div><label for="log-start">实际开始（可空）</label><input id="log-start" name="actual_start" type="datetime-local"></div><div><label for="log-end">实际结束（可空）</label><input id="log-end" name="actual_end" type="datetime-local"></div></div>
+        <label for="log-result">结果</label><input id="log-result" name="result" placeholder="这次做成了什么">
+        <label for="log-obstacle">阻碍</label><input id="log-obstacle" name="obstacle" placeholder="如果受阻，记下具体原因">
+        <label for="log-evidence">证据或笔记引用（可空）</label><input id="log-evidence" name="evidence" placeholder="文件、测试或其他出处">
+        <button type="submit" class="primary">保存实际记录</button>
+      </form></article></div>
+      <div id="week-grid" class="week-grid"></div>
+      <section class="section-heading"><div><p class="eyebrow">回顾</p><h2>最近发生了什么</h2></div></section>
+      <article class="card" id="history-card"></article>
+    </div>
+  </main>
+</body>
+</html>

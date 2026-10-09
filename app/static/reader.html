@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="application-name" content="life-projects">
+<title>Life Projects · 项目概览</title>
+<link rel="stylesheet" href="reader.css"><script src="reader.js" defer></script>
+</head>
+<body>
+<header>
+  <div class="identity"><strong>Life Projects</strong><details class="about"><summary>关于此视图</summary><div><p>只展示当前接入且可读取的项目；覆盖范围与每个来源的版本分别列明。</p><p>包含表示归属；箭头表示依赖。外部进度是来源报告，本地不重新判定验收。</p><p id="version">正在读取…</p></div></details></div>
+</header>
+<main>
+  <nav aria-label="阅读模式"><button id="overview-toggle" aria-pressed="true">项目概览</button><button id="context-toggle" aria-pressed="false">整体结构</button><button id="refresh-sources">刷新</button></nav>
+  <div class="scope-row"><section id="coverage" aria-label="当前接入范围"></section><details id="source-freshness"><summary>来源与范围</summary><div class="source-panel"><p id="source-summary">正在核对来源…</p><p id="updated"></p><div id="coverage-list"></div><ul id="source-list"></ul></div></details></div>
+  <p id="warning" role="status" hidden></p>
+  <section id="context-region" aria-label="整体结构" hidden></section>
+  <p id="loading" role="status">正在读取项目视图…</p>
+  <nav id="breadcrumbs" aria-label="当前位置" hidden></nav>
+  <p id="route-notice" role="status" hidden></p>
+  <section id="overview" aria-label="项目摘要"></section>
+  <section id="project-detail" aria-label="项目与事项详情" hidden></section>
+  <footer>归属待明确的项目仍可推进。验收结论与事项状态分别保留。<span id="offline-note"></span></footer>
+</main>
+<aside id="edit-notice" role="status" hidden><span></span><button id="undo-context" type="button" hidden>撤销这次修改</button></aside>
+<dialog id="classification" aria-labelledby="edit-title">
+  <form id="classification-form">
+    <h2 id="edit-title"></h2><p id="edit-subject"></p><p id="edit-help" class="muted"></p>
+    <div id="edit-fields"></div><p id="edit-error" role="alert" hidden></p>
+    <div class="edit-actions"><button id="edit-reload" type="button" hidden>重新读取，放弃当前输入</button><button id="edit-cancel" type="button">取消</button><button id="edit-save" type="submit">保存</button></div>
+  </form>
+</dialog>
+<script id="initial-data" type="application/json">null</script>
+</body>
+</html>

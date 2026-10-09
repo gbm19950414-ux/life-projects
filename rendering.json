@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "java": "java",
+  "plantuml": {
+    "version": "1.2026.2",
+    "path": ".architecture/cache/plantuml.jar",
+    "sha256": "7a3eacbccd08311f14b107b1254e179adc1f81fa8bd52bbaf563a37f00ea026f"
+  }
+}

@@ -1,0 +1,209 @@
+{
+  "schema": "public-export/v1",
+  "plan_id": "pd-20261009-project-inventory-naming-github-publication",
+  "upstream_project": "life-projects",
+  "upstream_commit": null,
+  "source_files": [
+    {
+      "path": "app/__init__.py",
+      "source_sha256": "2f0f3f133bcc54362950fe765d6fa89d05714ad52511b8305f9ac007ad90e379"
+    },
+    {
+      "path": "app/context_edit.py",
+      "source_sha256": "e29394919efe7e06de02b3d14b033e7b12c84ad3f2cf56c304935c2a9e947ed2"
+    },
+    {
+      "path": "app/conversation.py",
+      "source_sha256": "f16221f178984236c6b23c85b19c303007eb7ae0e8b70b70df91bf7cc3aceea8"
+    },
+    {
+      "path": "app/demands.py",
+      "source_sha256": "b10de0fc54a7283067c2a2adde131f3f396eaed06732b4575a68f41017f048a2"
+    },
+    {
+      "path": "app/execplan_progress.py",
+      "source_sha256": "a527651ea98e1b69e26ae075099daada20e7fa2992b80bfa8aa27d9ddd84402e"
+    },
+    {
+      "path": "app/graphs.py",
+      "source_sha256": "eee214856a15619d604c3842a3310b1b3e55dd5be721cc03bc64a4779944817a"
+    },
+    {
+      "path": "app/live_sync.py",
+      "source_sha256": "a392f4cf8ee024cc393a4a35c98b1b00f7d3fe2c29b9ebf1da4be2091784a098"
+    },
+    {
+      "path": "app/model.py",
+      "source_sha256": "743a0212c2a280d6be7e11d8ab07745e7b62e55731296fdde24baf1d2ef97fe2"
+    },
+    {
+      "path": "app/pilot.py",
+      "source_sha256": "65a8f667db8415158a20f7781f1be28d5118db93d18f21a7bbfc05552cec147c"
+    },
+    {
+      "path": "app/project_read_model.py",
+      "source_sha256": "6ff5c2a8011dc31be340a42513ee602d291d731638e7b53f27ed84e643168de9"
+    },
+    {
+      "path": "app/reader.py",
+      "source_sha256": "94ef4aa83ac23179114441d8e2bea0df62f0c0fd187a88d73f49bab63c2c6ab7"
+    },
+    {
+      "path": "app/recovery.py",
+      "source_sha256": "a88c7755727c057ac4e9a3c56b62af1b10ebee47b07271253481930de6bc8773"
+    },
+    {
+      "path": "app/server.py",
+      "source_sha256": "cfbb4345c109fc35db8c9c884c52d6259214865b28bde9b800f47798fc6664bb"
+    },
+    {
+      "path": "app/static/app.js",
+      "source_sha256": "1188713f946bd46a3a6a9bb0331d7301953acf4ec720e8c379623f10e89a2741"
+    },
+    {
+      "path": "app/static/index.html",
+      "source_sha256": "386b8c33c24eec334cb51203fa25a9432e09959c429b6b51797684819f104d3f"
+    },
+    {
+      "path": "app/static/reader.css",
+      "source_sha256": "9d48e2104b6cb76e26ac3bcac9b6dcfbe5e4ac1d52d011b4c3e59467057cbb4f"
+    },
+    {
+      "path": "app/static/reader.html",
+      "source_sha256": "b1d1b0e9e32420a34ef05b7114c5d20786818b220036289132c2a7b1a343da49"
+    },
+    {
+      "path": "app/static/reader.js",
+      "source_sha256": "dac07ce92788e7e74025be5b6e09ab469241b27d2a97150c85d81ee097e1d3cc"
+    },
+    {
+      "path": "app/static/style.css",
+      "source_sha256": "e42f058e3b5f21216f36bd0de34b64bce672b1784b2e44ba20e9d6b19ecddf06"
+    },
+    {
+      "path": "app/store.py",
+      "source_sha256": "62dbb127e653902fe4b980998e72318aa078f4ea7fd67d2e2dc2c12ae6997996"
+    },
+    {
+      "path": "app/tracking.py",
+      "source_sha256": "b741324cbc13f0c1dfc8650da02bbb924c94830c769570d3df7d47cd523715f1"
+    },
+    {
+      "path": "app/voice_intake.py",
+      "source_sha256": "f96d1cd9bd43d35cbf8cb41bd456b61081fd66ec0902c65e694af26daa87f235"
+    },
+    {
+      "path": "tests/test_completion_boundaries.py",
+      "source_sha256": "b2cb61027926090f32daf0e3a5a32e22fd513005fd6f3722273ee473a2ec12f5"
+    },
+    {
+      "path": "tests/test_context_edit.py",
+      "source_sha256": "2d0db2dbf8a29941542f87290ccfb22a72817db05e6d3ed2260d6d88ced73b4a"
+    },
+    {
+      "path": "tests/test_cross_project_views.py",
+      "source_sha256": "47131a58a843bc680d2ca6d5d06739b58491a60f8cbe356b9318e6f326b4f666"
+    },
+    {
+      "path": "tests/test_demands.py",
+      "source_sha256": "1bf36af8998ce0248216b07f3eeb5fa7ea1ac65d23d894d5b8b4ca073040872f"
+    },
+    {
+      "path": "tests/test_goal_views.py",
+      "source_sha256": "e4a32bce0ffce998a582c9283e1990e5288dbc3b08d1f45bb17d35782804d66d"
+    },
+    {
+      "path": "tests/test_goals.py",
+      "source_sha256": "16cb1f62f2d43c79746da6257ccc7353cceafadee32187660f0e21a686623a5b"
+    },
+    {
+      "path": "tests/test_graphs.py",
+      "source_sha256": "d4e8fbc7ed16249214a7b059dd96b7511225fb36cba58c4db97dc7fc3a16a7a8"
+    },
+    {
+      "path": "tests/test_live_sync.py",
+      "source_sha256": "345823e5dd92a081352bf5af9150fbb8f22eac8652d3d32cad2753f13668f1fa"
+    },
+    {
+      "path": "tests/test_migration.py",
+      "source_sha256": "78713ef54e40a9f343a8ab6f41cc86ec4fb45afdd05d4d941731b086384f286f"
+    },
+    {
+      "path": "tests/test_nested_reader.py",
+      "source_sha256": "1ffc4283b9058888500890dcaee4eabcf8a98099f1f5c5f6fab8d533c37c3f92"
+    },
+    {
+      "path": "tests/test_pilot.py",
+      "source_sha256": "fa44b1afd6496f98ff9a4fdfeae79ee8fb437fded9ec9527fe74e96b48abdf49"
+    },
+    {
+      "path": "tests/test_project_read_model.py",
+      "source_sha256": "9e4fe8cb209e87fc44e5e8d934ce0754fb43a666ef9fa04d3305d6dd95076bd8"
+    },
+    {
+      "path": "tests/test_reader.py",
+      "source_sha256": "8f4aca6545d3bec909a46f6b3ab1059c957343d80488b5dcc66327938f963da6"
+    },
+    {
+      "path": "tests/test_reader_navigation.js",
+      "source_sha256": "7577847a64e17d348d5c76aaf2e3211ce49a01ceae47409c58e998983c0943c6"
+    },
+    {
+      "path": "tests/test_reader_supplement.py",
+      "source_sha256": "f4ac9150a1803542b0a4da54e8a6527f64f713f15a4772a339805051a410fb12"
+    },
+    {
+      "path": "tests/test_service.py",
+      "source_sha256": "31026e45fb961428e3c661777ab1d8c027ffc6d3f2d9e145453c4dcea27a4f5d"
+    },
+    {
+      "path": "tests/test_tracking.py",
+      "source_sha256": "9d2c23730dcca1d5533a871f807095bde690f22b2608a8684e920a14b9a95766"
+    },
+    {
+      "path": "tests/test_voice_demand_intake.py",
+      "source_sha256": "5074a1114866ee8c137f16e4eb7fd8545ba32fe2f7034c3133da654f72d9a4d4"
+    },
+    {
+      "path": "tests/test_workspace.py",
+      "source_sha256": "19cee75177b75b9a99cb87c6fbbbfec180e6b9e7f2839c10db8dbd77b21bfd0d"
+    },
+    {
+      "path": "tools/service.py",
+      "source_sha256": "2a203b235c2039280ce11ee80dd9694716bff82a2f9f4da35ca8a974403de28f"
+    }
+  ],
+  "adaptations": [
+    {
+      "path": "README.md",
+      "kind": "public-description",
+      "reason": "Self-contained public setup; private project references excluded"
+    },
+    {
+      "path": ".gitignore",
+      "kind": "generated",
+      "reason": "Keep private/runtime outputs out of version control"
+    },
+    {
+      "path": "app/pilot.py",
+      "kind": "anonymized-synthetic-default",
+      "reason": "Remove actual chat identity and avoid implying a real approval in initial template"
+    },
+    {
+      "path": "tests/test_goal_views.py",
+      "kind": "anonymized-synthetic-default",
+      "reason": "Remove actual chat identity and avoid implying a real approval in initial template"
+    },
+    {
+      "path": "app/static/reader.html",
+      "kind": "public-entry",
+      "reason": "Remove private documentation service link"
+    },
+    {
+      "path": "rendering.json",
+      "kind": "portable-runtime",
+      "reason": "Use PATH Java; preserve exact jar identity"
+    }
+  ],
+  "scope": "Reusable source, synthetic contracts and tests only; original history and private workspaces excluded"
+}
